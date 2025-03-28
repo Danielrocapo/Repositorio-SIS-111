@@ -1,0 +1,74 @@
+Pseudocódigo: Aventura en la cueva
+Inicio
+-	Mostrar mensaje de bienvenida al jugador.
+-	Declarar las variables:
+-	opcion: Para almacenar la elección del jugador.
+-	tienesLlave: Para verificar si el jugador tiene la llave (inicialmente false).
+-	Entrar en el bucle principal para mostrar el menú inicial:
+-	Mostrar el menú inicial con la opción para explorar la cueva.
+-	Leer la entrada del jugador.
+-	Si el jugador selecciona explorar la cueva:
+-	Entrar en el menú de opciones dentro de la cueva.
+Menú de opciones en la cueva
+-	Mostrar las cuatro direcciones posibles:
+-	Túnel a la derecha.
+-	Sala al centro.
+-	Pasaje oscuro a la izquierda.
+-	Pozo profundo.
+-	Leer la entrada del jugador.
+-	Según lo que elija, ejecutar la lógica de cada rama:
+Rama: Túnel a la derecha
+-	Mostrar las opciones en la cámara:
+-	Intentar alcanzar el objeto brillante en el agua:
+-	Si el jugador toma el objeto brillante:
+-	Mostrar la opción de entrar por una puerta secreta o abandonar el objeto.
+-	Si el jugador entra:
+-	Mostrar mensaje de final verdadero (el jugador encuentra un tesoro y se convierte en leyenda).
+-	Si abandona el objeto:
+-	Mostrar mensaje de regreso al cruce inicial.
+-	Beber agua:
+-	Mostrar susurros y opciones para interactuar con la voz o salir de la cámara.
+-	Investigar grabados en las paredes:
+-	Mostrar mensajes relacionados con la historia de la fuente.
+-	Volver al cruce inicial:
+-	Salir del bucle interno y regresar al menú principal de la cueva.
+Rama: Sala al centro
+-	Crear un bucle interno con una variable regresar.
+-	Mostrar las opciones para buscar una salida antes de que la sala colapse.
+-	Permitir al jugador tres intentos para encontrar la salida:
+-	Empujar una piedra:
+-	Si la piedra revela un pasaje, el jugador escapa (final verdadero).
+-	Examinar una grieta:
+-	Mostrar que no ayuda a escapar.
+-	Buscar bajo el altar:
+-	Mostrar que el mecanismo no abre ninguna salida.
+-	Rendirte:
+-	Mostrar mensaje de colapso (final trágico).
+-	Volver al cruce inicial:
+-	Salir del bucle interno.
+Rama: Pasaje oscuro a la izquierda
+-	Crear un bucle interno con una variable regresar.
+-	Mostrar las opciones para explorar el pasaje:
+-	Examinar las marcas en las paredes:
+-	Mostrar mensaje sobre el artefacto protegido por el guardián.
+-	Buscar en el suelo:
+-	Mostrar que el jugador encuentra una llave oxidada.
+-	Actualizar tienesLlave = true.
+-	Volver al cruce inicial:
+-	Salir del bucle interno.
+Rama: Pozo profundo
+-	Mostrar las opciones para interactuar en el pozo:
+-	Examinar la puerta:
+-	Mostrar que la puerta requiere una llave.
+-	Usar la llave:
+-	Verificar si tienesLlave == true:
+-	Si tiene la llave:
+-	Mostrar mensaje de salida exitosa (final verdadero).
+-	Si no tiene la llave:
+-	Mostrar que no puede abrir la puerta.
+-	Subir por la cuerda:
+-	Salir del bucle interno y regresar al menú principal.
+Fin
+-	Mostrar mensaje de despedida cuando el jugador alcance un final verdadero o trágico.
+-	Terminar el programa con return 0
+https://onlinegdb.com/zojUV52QD
